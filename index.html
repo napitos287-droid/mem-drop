@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meme Drop</title>
+
+    <style>
+
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            margin: 0;
+
+            font-family: Arial, sans-serif;
+
+            background: #111111;
+
+            color: white;
+
+        }
+
+        .app {
+
+            max-width: 500px;
+
+            min-height: 100vh;
+
+            margin: 0 auto;
+
+            padding: 25px 20px;
+
+        }
+
+        .header {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            margin-bottom: 40px;
+
+        }
+
+        .logo {
+
+            font-size: 26px;
+
+            font-weight: bold;
+
+        }
+
+        .balance {
+
+            background: #222222;
+
+            padding: 10px 15px;
+
+            border-radius: 12px;
+
+        }
+
+        .case {
+
+            background: #1c1c1c;
+
+            border-radius: 20px;
+
+            padding: 30px 20px;
+
+            text-align: center;
+
+        }
+
+        .case-image {
+
+            font-size: 100px;
+
+            margin: 30px 0;
+
+        }
+
+        .case h1 {
+
+            margin: 0;
+
+            font-size: 28px;
+
+        }
+
+        .case p {
+
+            color: #999999;
+
+        }
+
+        .open-button {
+
+            width: 100%;
+
+            padding: 18px;
+
+            margin-top: 20px;
+
+            border: none;
+
+            border-radius: 15px;
+
+            background: #ffffff;
+
+            color: #111111;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+        }
+
+        .menu {
+
+            display: flex;
+
+            gap: 10px;
+
+            margin-top: 20px;
+
+        }
+
+        .menu button {
+
+            flex: 1;
+
+            padding: 15px 5px;
+
+            border: none;
+
+            border-radius: 12px;
+
+            background: #222222;
+
+            color: white;
+
+            cursor: pointer;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="header">
+
+        <div class="logo">🔥 Meme Drop</div>
+
+        <div class="balance">
+
+            🪙 1 000
+
+        </div>
+
+    </div>
+
+    <div class="case">
+
+        <div class="case-image">
+
+            🎁
+
+        </div>
+
+        <h1>MEME CASE</h1>
+
+        <p>
+
+            Открой кейс и получи случайный мем
+
+        </p>
+
+        <button class="open-button" onclick="openCase()">
+
+            🎰 ОТКРЫТЬ КЕЙС
+
+        </button>
+
+    </div>
+
+    <div class="menu">
+
+        <button onclick="inventory()">
+
+            🎒<br>
+
+            Инвентарь
+
+        </button>
+
+        <button onclick="market()">
+
+            🏪<br>
+
+            Рынок
+
+        </button>
+
+        <button onclick="profile()">
+
+            👤<br>
+
+            Профиль
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+function openCase() {
+
+    alert("🎉 Кейс открыт!\n\n😂 Тебе выпал мем!");
+
+}
+
+function inventory() {
+
+    alert("🎒 Инвентарь пока пуст.");
+
+}
+
+function market() {
+
+    alert("🏪 Рынок пока в разработке.");
+
+}
+
+function profile() {
+
+    alert("👤 Профиль игрока.");
+
+}
+
+</script>
+
+</body>
+
+</html>
